@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SpecflowTests_Examples
+/packages
+/SpecflowPages/bin
+/SpecflowPages/obj
+/SpecflowPages/TestReports
+*csproj.user
+/SpecflowTests/bin
+/SpecflowTests/obj
+/TestResults/Screenshots
