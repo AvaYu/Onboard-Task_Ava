@@ -25,6 +25,9 @@ namespace SpecflowTests
 		[Given(@"I have added one certification record")]
 		public void GivenIHaveAddedOneCertificationRecord()
 		{
+			// Wait 1 second
+			Thread.Sleep(1000);
+
 			// Click on the Add New button
 			Driver.driver.FindElement(By.XPath("//div[contains(@class,'active')]//div[contains(@class,'button')][contains(text(),'Add New')]")).Click();
 

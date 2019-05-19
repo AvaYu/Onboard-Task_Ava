@@ -16,7 +16,7 @@ namespace SpecflowTests.AcceptanceTest
 		{
 			// Wait 1 second
 			Thread.Sleep(1000);
-			//Driver.driver.FindElement(By.XPath("//a[@class='item active'][contains(text(),'Languages')]")).Click();
+			Driver.driver.FindElement(By.XPath("//a[contains(@class,'item')][contains(text(),'Languages')]")).Click();
 		}
 
 		[Given(@"I have added four different languages records")]
@@ -32,6 +32,9 @@ namespace SpecflowTests.AcceptanceTest
 
 			foreach (string language in languages)
 			{
+				// Wait 1 second
+				Thread.Sleep(1000);
+
 				// Click on the Add New button
 				Driver.driver.FindElement(By.XPath("//div[contains(@class,'active')]//div[contains(@class,'button')][contains(text(),'Add New')]")).Click();
 
@@ -49,7 +52,7 @@ namespace SpecflowTests.AcceptanceTest
 		[When(@"I click on the delete icon of the first language record")]
 		public void WhenIClickOnTheDeleteIconOfTheFirstLanguageRecord()
 		{
-			Driver.driver.FindElement(By.XPath("//div[contains(@class,'active')]//tbody/tr[1]//i[@class='remove icon']")).Click();
+			Driver.driver.FindElement(By.XPath("//div[contains(@class,'active')]//tbody[1]/tr[1]//i[@class='remove icon']")).Click();
 		}
 
 		[Then(@"The Add New button should be shown again")]

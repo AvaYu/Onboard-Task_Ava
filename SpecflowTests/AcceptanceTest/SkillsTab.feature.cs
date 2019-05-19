@@ -125,12 +125,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 19
  testRunner.Given("I am on the Skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 20
- testRunner.And("I have clicked on the edit icon of a skill record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have added one skill record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 21
- testRunner.And("I have changed skill name to \"Java\" and skill level to \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have clicked on the edit icon of the record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22
- testRunner.When("I click on the Cancel button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have changed skill name to \"Java\" and skill level to \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
+ testRunner.When("I click on the Cancel button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 24
  testRunner.Then("The selected skill record shouldn\'t be updated to the listing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -141,18 +143,20 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void CheckIfSellerIsAbleToEditASkillRecord()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if seller is able to edit a skill record", null, ((string[])(null)));
-#line 25
+#line 26
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 26
- testRunner.Given("I am on the Skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 27
- testRunner.And("I have clicked on the edit icon of a skill record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am on the Skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 28
- testRunner.And("I have changed skill name to \"Java\" and skill level to \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have added one skill record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
- testRunner.When("I click on the Update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have clicked on the edit icon of the record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
+ testRunner.And("I have changed skill name to \"Java\" and skill level to \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
+ testRunner.When("I click on the Update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
  testRunner.Then("The selected skill record should be updated to the listing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -163,14 +167,16 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void CheckIfSellerIsAbleToDeleteASkillRecord()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if seller is able to delete a skill record", null, ((string[])(null)));
-#line 32
+#line 34
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 33
- testRunner.Given("I am on the Skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 34
- testRunner.When("I click on the delete icon of a skill record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 35
+ testRunner.Given("I am on the Skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 36
+ testRunner.And("I have added one skill record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 37
+ testRunner.When("I click on the delete icon of the record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 38
  testRunner.Then("The selected skill record should be deleted from the listing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
